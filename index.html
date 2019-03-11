@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎使用CSDN-markdown编辑器</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p>Git is a distributed(分布式) version control system<br>
+Git is a free software</p>
+<pre><code class="prism language-javascript">git init
+</code></pre>
+<p>初始化<br>
+建立一个空库</p>
+<pre><code class="prism language-javascript">cd <span class="token punctuation">.</span>git 
+</code></pre>
+<p>进入git的隐藏库</p>
+<pre><code class="prism language-javascript">cd <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">/</span>
+</code></pre>
+<p>进入上层文件</p>
+<pre><code class="prism language-javascript">git add
+</code></pre>
+<p>添加文件 此前都是缓存区中。相当于购物车</p>
+<pre><code class="prism language-javascript">git commit <span class="token operator">-</span>m <span class="token string">"wrote a readme file"</span>
+</code></pre>
+<p>确认添加文件  相当于付款确定</p>
+<pre><code class="prism language-javascript">git status
+</code></pre>
+<p>可以确认下当前仓库的情况 可以看到有哪些文件出现了改变</p>
+<pre><code class="prism language-javascript">git diff 文件名
+</code></pre>
+<p>用来对比上次提交的文件的具体差别。</p>
+<pre><code class="prism language-javascript">git log
+</code></pre>
+<p>仓库日志  g 上 k 下  q 退出</p>
+<pre><code class="prism language-javascript">git log <span class="token operator">--</span>pretty<span class="token operator">=</span>oneline
+</code></pre>
+<p>为对日志历史简单修饰</p>
+<pre><code class="prism language-javascript">git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">^</span>
+</code></pre>
+<p>指向上个版本，一个^表示上一个      这个命令因为无法解析^所以使用gitbash</p>
+<pre><code class="prism language-javascript">git reset <span class="token operator">--</span>hard 前五位  版本号
+</code></pre>
+<p>指向想要的版本</p>
+<pre><code class="prism language-javascript">git reflog 
+</code></pre>
+<p>将所有版本号保存</p>
+<pre><code class="prism language-javascript">git checkout <span class="token operator">--</span>readme<span class="token punctuation">.</span>txt
+</code></pre>
+<p>将其从缓冲区撤回</p>
+<p>可以先git reset 再 checkout</p>
+<pre><code class="prism language-javascript">git rm
+</code></pre>
+<p>删除文件</p>
+<pre><code class="prism language-javascript">git remote add origin git@github<span class="token punctuation">.</span>com<span class="token punctuation">:</span>lwpwyf<span class="token operator">/</span>learn_git<span class="token punctuation">.</span>git
+</code></pre>
+<p>//类似于此与github仓库相连接</p>
+<pre><code class="prism language-javascript">git push <span class="token operator">-</span>u origin master 
+</code></pre>
+<p>将其提交上去。</p>
+<p>第二次提交到github时不再使用<br>
+untracked file 未在版本库里的文件</p>
+</div>
+</body>
+
+</html>
